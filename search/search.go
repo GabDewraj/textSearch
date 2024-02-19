@@ -23,6 +23,7 @@ func TextSearch(textToSearch string, subText string) string {
 			positions = append(positions, strconv.Itoa(i+1))
 		}
 	}
+	// Use comma and tab to separate the output positions
 	stringedPositions := strings.Join(positions, ", ")
 	if len(stringedPositions) == 0 {
 		return fmt.Sprintf("%s \"<No Output>\"", subText)
